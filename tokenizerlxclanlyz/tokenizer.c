@@ -2,13 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
-/*
-AD:FURKAN
-SOYAD:SAĞLAM
-NUMARA:02200201017
-1.ÖĞRETİM 2.SINIF
-*/
-//yorum satırlarını numaralandırırak yaptım her numara "//" arasını ifade edicek
+//yorum satÄ±rlarÄ±nÄ± numaralandÄ±rÄ±rak yaptÄ±m her numara "//" arasÄ±nÄ± ifade edicek
 void kaynakodyazdir(char dizi[], int diziboyut)
 {
 	printf("  \nkaynak kodunuz:\n\n");
@@ -21,9 +15,9 @@ void kaynakodyazdir(char dizi[], int diziboyut)
 	printf("kelimelestirilmis hali:\n\n");
 }
 
-//yorum satırı 1 alttaki kodda ++ -- gibi kontrolleri yaptım çünkü bunlar ayrı ayrı olucak kavramlar değil
-//c de beraber yazılan yapılar oldugu için böyle bir şey yaptım ayrıca virgül atarken dogru virgül atabilmemi sağladı.
-//bunlar özel durumlar oldugu için diziye atmak daha fazla işleme neden olacağı içi böyle tercih ettim
+//yorum satÄ±rÄ± 1 alttaki kodda ++ -- gibi kontrolleri yaptÄ±m Ã§Ã¼nkÃ¼ bunlar ayrÄ± ayrÄ± olucak kavramlar deÄŸil
+//c de beraber yazÄ±lan yapÄ±lar oldugu iÃ§in bÃ¶yle bir ÅŸey yaptÄ±m ayrÄ±ca virgÃ¼l atarken dogru virgÃ¼l atabilmemi saÄŸladÄ±.
+//bunlar Ã¶zel durumlar oldugu iÃ§in diziye atmak daha fazla iÅŸleme neden olacaÄŸÄ± iÃ§i bÃ¶yle tercih ettim
 int ozeldurum(char karakter1, char karakter2)
 {
 	if (
@@ -52,17 +46,17 @@ int ozeldurum(char karakter1, char karakter2)
 		return (0);
 	}
 }
-//yorum satırı 1 bitti
+//yorum satÄ±rÄ± 1 bitti
 
-//yorum satırı 2 alttaki kodda ayraç olup omadıgını kontrol ettim dogru bir biçimde virgül atabilmek için
-//bazılarını ascii olarak yazdım "'" kodun okunurlugu açısından güzel olmadıgından bunun gibi örnekleri ascii olarak yazdım
-//32=bosluk tusu   34="(çift tırnak)  39='(tektırnak)
+//yorum satÄ±rÄ± 2 alttaki kodda ayraÃ§ olup omadÄ±gÄ±nÄ± kontrol ettim dogru bir biÃ§imde virgÃ¼l atabilmek iÃ§in
+//bazÄ±larÄ±nÄ± ascii olarak yazdÄ±m "'" kodun okunurlugu aÃ§Ä±sÄ±ndan gÃ¼zel olmadÄ±gÄ±ndan bunun gibi Ã¶rnekleri ascii olarak yazdÄ±m
+//32=bosluk tusu   34="(Ã§ift tÄ±rnak)  39='(tektÄ±rnak)
 
 int ayrac(char karakter)
 {
 	char dizi[26] = {'+', '-', '*', '/', ',', ';', '>', '<', '[', ']', '{', '}', ')', '(', '=', '|', '&', 34, 39, '!', 92, ':', '?', '^', '%', '.'};
 	int i = 0, deger = 0;
-	bool fonksiyondancik = true; // iki nedeni var 1.neden eger terminal'i bulursa deger=1 olucak ama hala devam edicek bir sonrakinde bulamayınca deger 0 olucak ve hatalı çalışıcak 2.neden ise buldugu anda diziye deam etmemesini sağlamak zaman kaybetmemesi için.
+	bool fonksiyondancik = true; // iki nedeni var 1.neden eger terminal'i bulursa deger=1 olucak ama hala devam edicek bir sonrakinde bulamayÄ±nca deger 0 olucak ve hatalÄ± Ã§alÄ±ÅŸÄ±cak 2.neden ise buldugu anda diziye deam etmemesini saÄŸlamak zaman kaybetmemesi iÃ§in.
 	while (i < 26 && fonksiyondancik == true)
 	{
 		if (dizi[i] == karakter)
@@ -95,8 +89,8 @@ int main(int argc, char *argv[])
 	char karakter;
 	int i = 0;
 
-	//yorum satırı 3 bu kod satırını dosyanın sonuna kadar okumamı ve fgetc fonksiyonu ile karakter karakter okuyup bir karakter dizisine
-	//atmaişlemini gerçekleştirdim .dosyayı okurken EOF kavramını kullandım EOF txt metinin son harfini gösteren bir işaretçi
+	//yorum satÄ±rÄ± 3 bu kod satÄ±rÄ±nÄ± dosyanÄ±n sonuna kadar okumamÄ± ve fgetc fonksiyonu ile karakter karakter okuyup bir karakter dizisine
+	//atmaiÅŸlemini gerÃ§ekleÅŸtirdim .dosyayÄ± okurken EOF kavramÄ±nÄ± kullandÄ±m EOF txt metinin son harfini gÃ¶steren bir iÅŸaretÃ§i
 	if (okunacakdosya != NULL)
 	{
 		while (karakter != EOF)
@@ -112,10 +106,10 @@ int main(int argc, char *argv[])
 	}
 	kaynakodyazdir(kelime, i);
 
-	// yorum satırı 3 bitti
+	// yorum satÄ±rÄ± 3 bitti
 
-	// yorum satırı 4 fgetc fonksiyonu bosluk tab enter tusunu da bir karakter olarak aldıgı için bunları dizide
-	//kaydırma yaparak bir nevi yok ettim yani karakter dizimde bosluk tab ve enter tuşlarını kaldırdım
+	// yorum satÄ±rÄ± 4 fgetc fonksiyonu bosluk tab enter tusunu da bir karakter olarak aldÄ±gÄ± iÃ§in bunlarÄ± dizide
+	//kaydÄ±rma yaparak bir nevi yok ettim yani karakter dizimde bosluk tab ve enter tuÅŸlarÄ±nÄ± kaldÄ±rdÄ±m
 	int k, j, bosluk = 0;
 
 	for (k = 0; k < i - 1; k++)
@@ -134,9 +128,9 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	//yorum satırı 4 bitti
+	//yorum satÄ±rÄ± 4 bitti
 
-	//yorum satırı 5 olası boslukları garantilemek için yeni bir diziye bosluksuz halini attım
+	//yorum satÄ±rÄ± 5 olasÄ± bosluklarÄ± garantilemek iÃ§in yeni bir diziye bosluksuz halini attÄ±m
 	int diziboyut = 0;
 	for (j = 0; j < i - 1 - bosluk; j++)
 	{
@@ -146,16 +140,16 @@ int main(int argc, char *argv[])
 			yenidizi[j] = kelime[j];
 		}
 	}
-	//yorum satırı 5 bitti
-	printf("{ "); //dizi biçiminde gozukmesi için kelimlestirilmis halinin basına ve sonuna {} eklemek icin yapıldı yani görunum icin yapıldı
+	//yorum satÄ±rÄ± 5 bitti
+	printf("{ "); //dizi biÃ§iminde gozukmesi iÃ§in kelimlestirilmis halinin basÄ±na ve sonuna {} eklemek icin yapÄ±ldÄ± yani gÃ¶runum icin yapÄ±ldÄ±
 	bool ayracmi, ozel, ikisonrasiayracmi, birsonrasiayracmi;
 
 	int l = 0;
 	for (l = 0; l < diziboyut; l++)
 	{
-		ayracmi = ayrac(yenidizi[l]);				//karakter dizisinde eger bir terminal(; , " gibi degerlerin olup olmadıgını kontrol ettim )
-		birsonrasiayracmi = ayrac(yenidizi[l + 1]); // virgül atarken iki ayraç yanayana gelirse tek bir virgül atmak gerekiyor sonrasının ayraçolup olmadıgını kontrol ettim
-		ikisonrasiayracmi = ayrac(yenidizi[l + 2]); // ++ -- gibi durumlarda bir sonrasını kontrol ettiğimde + ve sonarsı da + yı kontrol etmiş olurum buna gerek yok iki sonarsaını yani ++ dan sonra bir terminal var mı ?
+		ayracmi = ayrac(yenidizi[l]);				//karakter dizisinde eger bir terminal(; , " gibi degerlerin olup olmadÄ±gÄ±nÄ± kontrol ettim )
+		birsonrasiayracmi = ayrac(yenidizi[l + 1]); // virgÃ¼l atarken iki ayraÃ§ yanayana gelirse tek bir virgÃ¼l atmak gerekiyor sonrasÄ±nÄ±n ayraÃ§olup olmadÄ±gÄ±nÄ± kontrol ettim
+		ikisonrasiayracmi = ayrac(yenidizi[l + 2]); // ++ -- gibi durumlarda bir sonrasÄ±nÄ± kontrol ettiÄŸimde + ve sonarsÄ± da + yÄ± kontrol etmiÅŸ olurum buna gerek yok iki sonarsaÄ±nÄ± yani ++ dan sonra bir terminal var mÄ± ?
 
 		if (l != diziboyut)
 		{
@@ -168,14 +162,14 @@ int main(int argc, char *argv[])
 			{
 				if (ikisonrasiayracmi == 1)
 				{
-					printf(",%c%c", yenidizi[l], yenidizi[l + 1]); //örneğin ,++ yapıp sonrası ayraç ise ,(, yapmalıyız bunun için yazdım ==> ,++,(,
+					printf(",%c%c", yenidizi[l], yenidizi[l + 1]); //Ã¶rneÄŸin ,++ yapÄ±p sonrasÄ± ayraÃ§ ise ,(, yapmalÄ±yÄ±z bunun iÃ§in yazdÄ±m ==> ,++,(,
 					l++;
 				}
 				else
 				{
 					if (l == diziboyut - 1)
 					{
-						printf(",%c%c", yenidizi[l], yenidizi[l + 1]); //en sonda 1 virgül fazladan atmaması gerektiğinden yazdım
+						printf(",%c%c", yenidizi[l], yenidizi[l + 1]); //en sonda 1 virgÃ¼l fazladan atmamasÄ± gerektiÄŸinden yazdÄ±m
 						l++;
 					}
 					else
@@ -188,13 +182,13 @@ int main(int argc, char *argv[])
 
 			else if (birsonrasiayracmi == 1)
 			{
-				printf(",%c", yenidizi[l]); //örnek ); iki terminal yanyana gelirse başına ve sonuna virgül atarsak ,),,;, olacagı için yaptım
+				printf(",%c", yenidizi[l]); //Ã¶rnek ); iki terminal yanyana gelirse baÅŸÄ±na ve sonuna virgÃ¼l atarsak ,),,;, olacagÄ± iÃ§in yaptÄ±m
 			}
 			else
 			{
 				if (l == diziboyut - 1)
 				{
-					printf(",%c", yenidizi[l]); //sonda 1 virgül fazla dan oldugu için yapıldı
+					printf(",%c", yenidizi[l]); //sonda 1 virgÃ¼l fazla dan oldugu iÃ§in yapÄ±ldÄ±
 				}
 				else
 				{
@@ -204,7 +198,7 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-			printf("%c", yenidizi[l]); //eger terminal degilse oldugu gibi yazması için yapıldı
+			printf("%c", yenidizi[l]); //eger terminal degilse oldugu gibi yazmasÄ± iÃ§in yapÄ±ldÄ±
 		}
 	}
 	printf("}");
